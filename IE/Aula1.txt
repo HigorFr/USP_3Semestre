@@ -1,0 +1,46 @@
+Experimento e Probabilidade
+    Experimento é um proceso onde existe a prossibilidade de diferente resultados mensuráveis
+    Deterministico -> Já se sabe o resultados
+    Aleatórios é o Oposto, e é o que será estudado
+
+Espaço Amostral é o conjunto de todos os resultados possíveis, não necessariamente é numeros, e não necessariamente podem ser descritos em palavras.
+    Obviamente com números faz mais sentido
+
+Toda probabilidade depende de um evento.
+    Probabilidade de _____ (envento)
+    Probabilidade de 3 não existe, existe probabilidade de {3}
+
+ 
+Epaço de medida é um espaço com eventos definidos por:
+    - O espaço amostral (Omega) é um evento (Ou seja deve ser possível mensurar todo espaço)
+    - Se A é um evento, o complemento de A (Notação específica) também deve ser
+        Complemento de todo espaço amostral omegal é vazio por exemplo.
+    - Se há uma coleção de de eventos infinitos, a união de todos eles (Ui=1 de Ai) também de ve ser um evento
+
+Ou seja, eles tem objetivo de associar isso à um numero, que é a probabilidade em sí 
+
+Isso deriva em:
+    - Vaio é um evento
+    - União de uma quantidade finita de eventos é um evento
+    - Intersecção de dois eventos também é um evento
+
+Probabilidade - Axiomas (propriedades) que regem a metéria:
+    - Para todo evento A, a probabilidade de A Pr(A) >= 0, ou não será possíbilidade
+    - Probabilidade do espaço amostral omegal Pr(Omega) = 1 
+    - Para toda sequencia infinita de eventos dijuntos a probabilidade união de todos esses conujuntos é igual a somatoria das probabilidades individuais
+
+     O zero e 1 nas propriedades 1 e 2, definem o teto, por isso é uma porcentagem
+
+Generalização de Morgan para união de eventos
+    Para qualquer todo evento Ai
+    Pr(Ui=1/n Ai) = Formula grande no quadro
+
+
+Paradigmas, informação sobre a ocorrência de eventos e significado de probabilidades:
+    -Classica (Simetrica, tudo tem a mesma chance de ocorrer conforme resultado, meio ilógico)
+    -Frequencialista (A probabilidade, oriunda do mundo, define a frequência de ocorrência)
+    -Bayesiana (A probabilidade é subjetiva, ela se altera a todo momento conforme evidências)
+    
+
+
+
