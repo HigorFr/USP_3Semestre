@@ -40,7 +40,16 @@ Paradigmas, informação sobre a ocorrência de eventos e significado de probabi
     -Classica (Simetrica, tudo tem a mesma chance de ocorrer conforme resultado, meio ilógico)
     -Frequencialista (A probabilidade, oriunda do mundo, define a frequência de ocorrência)
     -Bayesiana (A probabilidade é subjetiva, ela se altera a todo momento conforme evidências)
+
+Técnicas de Contagem:
+    -Se os resultados de um expertimento são equiprovaveis (mesma possibilidade), a probabilidade se reduz a uma contagem. Teremos que:
+    P(A) = |A|/|Omega|
+    Para metodos discretos, para contínuos é uma integral
+
+
+
     
+
 
 
 
