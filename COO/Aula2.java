@@ -16,6 +16,8 @@
         //Informações sobre ele, variáveis, são os atributos (dados)
         //Operações são os métoods
 
+        //Em baixo nível quase não há diferneça
+
         //Sintaxe é (Classe).(Metodo/Atributo)  (por padrão é dificil ter que acessar atributo diretamente pois a boa prática é ter uma função propria para fazer alterações)
 
 
@@ -27,8 +29,8 @@ public class Aula2 {
     private class Carro {
         int gasolina;
 
-        void andar(int km){
-            Carro.gasolina -= 1;
+        void andar(Carro this){
+            this.gasolina -= 1;
         }
     }
 
@@ -37,6 +39,10 @@ public class Aula2 {
 //Em C, variáveis funcionam como Stack S; e Stack *S = malooc(-) são coisas diferentes, já que um reotrna um ponteiro e outro o bjeto em sí.
 //Em Java só existe Stack S; que já significa Stack *S = malooc(-);, ou seja, em java toda delcaração já cria um espaço para dados futuros, já sendo um ponteiro;
 
+//Para clonar objetvos, em java, toda classe já vem com método .clone(), que clona
+    //Só um adendo que quando isso é feito, a cópia é rasa, ele cria só um ponteiro para os atributos, e isso pode dar problema. O mais seguro é criar um novo método que faz isso como cópia profunda.
+        //Talvez tenha modo de fazer clone() o fazer cópia profunda, mas não sei
 
+    
 
 
