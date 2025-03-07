@@ -65,10 +65,13 @@
             //Cada coluna e linha representarão os grafos. E os valores serão 0 e 1 que representando a existêncai da relação
             //A matriz será simétrica se for um grafo não direcionado
             //Se for ponderado será guardardado o peso das arestas invés de 0 e 1 (0 pode ser válido, então deve-se tomar cuidado). Normalmente se usa uma constante padrão pré estabelecida (Ou usa duas matrizes separadas) para não haver duplos sentidos.
+        
         //Pode ser representado por uma arranjo de lista adjacentes
-            //São um arranjo de n listas (para cada uma das arestas) ligadas contendo os vertices dos vizinhos (Sem colocar vértices que não são vizinhos)
-            //Se for dirigido a lógidca é a mesma, mas só não será simétrico
+            //São um arranjo de n listas (para cada uma dos vértices) ligados contendo os vertices dos vizinhos (Sem colocar vértices que não são vizinhos)
+            //Se for dirigido a lógica é a mesma, mas só não será simétrico
+            //Se for ponderado é só guardar o peso na lista
 
+        //Normalmente, a maioria das realações não são tão grandes quanto o máximo possível. Mas da maneira criada da matriz ocupa muito espaço que mutias vezes não precisa pois leva isso em consideração. Então vale a pena usar a lista para economizar memória. Contudo a matriz é mais eficiente em um contexto mais denso invés de espaço. Depende do contexto
 
 
 
