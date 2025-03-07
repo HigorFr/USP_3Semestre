@@ -54,4 +54,5 @@
     //O OS é um exemplo deles
     //Os drivers também
     //Compiladores (Aqueles que leem seu código do programa)
-    //
+
+//.ASM é a extensão assembly, e provavelmente o que usaremos
