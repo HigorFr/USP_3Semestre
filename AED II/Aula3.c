@@ -217,3 +217,4 @@ bool retonarGrau(Grafo* g, int v){
 //prox aula vai ser com grafos ponderados
     //Agora falso não necessariamente é 0, pois é um valor válido
     //Será criado uma constante arbitrária (Que eu tenho certeza que a aplicação não usa) para servir como falso.
+        //Não da para tratar como NULL, já que é uma matriz do tipo ponteiro float. Precisaria de outra camada como ponteiro para colocar como NULL e consumiria o dobro de memória.
