@@ -53,9 +53,10 @@ bool inicializaGrafo(Grafo* g, int vertices){ //Note que já é dito a quantidad
     g->matriz = (bool**) malloc(sizeof(bool*)*vertices); //Zerando todas as vertices e arestas
     for (x=0; x<vertices; x++){
         g->matriz[x] = (bool*)malloc(sizeof(bool*)*vertices);
-
+        for(y=0; y<vertices;y++){
+            g->matriz[x][y] = false;
+        }
     }
-    //Não finalizei
 }
 
 //Exibir
@@ -64,13 +65,14 @@ void exibirGrafo(Grafo *g){
     int x,y;
     print("Arestas: %i, Vertices %i",g->numArestas,g->numVertices);
     for (x=0; x<g->numVertices; x++) print(" %i",x);
+    print("\n");
     for (x=0; x<g->numVertices; x++) { 
-        print(" %i",x);
-        for(x=0; x<g->numVertices; x++) print(" %i",g->matriz[x]);
-
+        print("%i",x);
+        for(x=0; x<g->numVertices; x++) print("\t%5i %i",g->matriz[x]);
+        if(g->matriz[x][y] == false)
+            printf("\t    ");
+        else printf("\t%5.2f", g->matriz[x][y]);
     }
-//Não finelizei essa merda tbm
-
 }
 
 
@@ -84,7 +86,7 @@ bool liberar(Grafo* g){
     if (!g) return false;
     int x;
     for(x=0; x<g->numVertices;x++)free(g->matriz[x]);
-    free(g->matriz[x]);
+    free(g->matriz);
     //Mudo para 0 para evitar concorrência ou erros:
     g->numArestas = 0;
     g->numVertices = 0;
@@ -122,7 +124,7 @@ bool RemoveAreasta(Grafo* g, int v1, int v2){
 }
 
 bool arestaExiste(Grafo* g, int v1, int v2){
-    if(!g || v1<0 || v2<0 ) return false; //...Blablabla, confere se existe, não anotei todas condições
+    if(!g || v1<0 || v2<0 || v1>=g->numVertices || v2 >= g->numVertices || !g->matriz[v1][v2]) return false; 
     return true;
 } //Também tem a questão de tratar erro diferente de falso, mas também fica a critério do objetivo.
 
@@ -149,8 +151,16 @@ bool retonarGrau(Grafo* g, int v){
     return n
 }
 
-
 //Função que vê se vertice tem vizinhos é, além das condições básicas, um for para cada uma um dos possíveis vizinhos, e dou break (return) se acho alguém. (Não anotei, igual contar grau quase) 
+
+
+bool temVizinho(Grafo* g, int v){
+    if(!g || v<0 || v>=g->numVertices) return false;
+    for(int x = 0; x<g->numVertices;x++){
+        if(g->matriz[v][x]) return true; //Travo a linha e olha um por um
+    }
+    return false;
+}
 
 
 //Agora para gráfos dirigos, ponderados é na prox aula:
