@@ -127,15 +127,17 @@ bool arestaExiste(Grafo* g, int v1, int v2){
     return true;
 } 
 
+
+//Caso eu não guardasse
 int numeroAresta(Grafo* g){
     if (g==NULL) return -1;
     int x,y, arestas = 0;
     for(x=0;x<g->numVertices;x++)
         for(y=x+1;y<g->numVertices;y++) if(g->matriz[x][y] != varinvalida) arestas++;
-
+    return arestas;
 }
 
-bool retonarGrau(Grafo* g, int v){
+int retonarGrau(Grafo* g, int v){
     int n = 0;
     if(!g || v<0 || v>=g->numVertices) return false;
     for(int x = 0; x<g->numVertices;x++){
@@ -195,5 +197,18 @@ int numeroAresta(Grafo* g){
     int x,y, arestas = 0;
     for(x=0;x<g->numVertices;x++)
         for(y=0;y<g->numVertices;y++) if(g->matriz[x][y] != varinvalida) arestas++;
-
+    return arestas;
 }
+
+
+int retonarGrau(Grafo* g, int v){
+    int n = 0;
+    if(!g || v<0 || v>=g->numVertices) return false;
+    for(int x = 0; x<g->numVertices;x++){
+        if(g->matriz[v][x] != varinvalida) n++; 
+        if(g->matriz[x][v] != varinvalida) n++;
+    }
+    return n;
+}
+
+

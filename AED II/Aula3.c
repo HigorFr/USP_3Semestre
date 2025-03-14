@@ -130,8 +130,7 @@ bool arestaExiste(Grafo* g, int v1, int v2){
 
 
 //Numero de arestas e de vertices é óbvio, só trazer o atributo
-
-//Mas tem como contar, se preciso
+//Mas tem como contar, caso não tivesse
 int numeroAresta(Grafo* g){
     if (g==NULL) return -1;
     int x,y, arestas = 0;
@@ -139,6 +138,7 @@ int numeroAresta(Grafo* g){
         for(y=x+1;y<g->numVertices;y++) if(g->matriz[x][y]) arestas++;
         //o y=x+1 é para passar só por metade da matriz, já que ela é simétrica
         //Isso vai ser u ma PA de razão 1, ou seja (N² - N)/2 que é O(N²)
+    return arestas;
 }
 
 //Para o grau do vértice é a mesma coisa, contudo eu não paro e vou somando
@@ -205,12 +205,12 @@ int numeroAresta(Grafo* g){
     for(x=0;x<g->numVertices;x++)
         for(y=0;y<g->numVertices;y++) if(g->matriz[x][y]) arestas++;
         //o y=x+1 agora não existe
+    return arestas;
 }
 
 
-//Retornar Grau (Não fiz para a outra pois era óbvio)
 //Agora preciso saber quantas arestas chegam nele (Ou seja, usar a coluna)
-bool retonarGrau(Grafo* g, int v){
+int retonarGrau(Grafo* g, int v){
     int n = 0;
     if(!g || v<0 || v>=g->numVertices) return -1;
     for(int x = 0; x<g->numVertices;x++){
