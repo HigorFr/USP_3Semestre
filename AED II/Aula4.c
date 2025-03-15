@@ -43,7 +43,7 @@ typedef struct
 } Grafo;
 
 bool inicializaGrafo(Grafo* g, int vertices){ //Note que já é dito a quantidade de vértices
-    if(g==NULL || vertices < 1) return false 
+    if(g==NULL || vertices < 1) return false;
     g->numVertices = vertices;
     g->numArestas = 0;
     int x,y;
