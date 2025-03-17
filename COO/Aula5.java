@@ -38,11 +38,4 @@ class Pessoa {
 
 
 
-public class Aula5 {
- 
-
-
-
-
-
-}
+public class Aula5 {}
