@@ -363,3 +363,5 @@ bool contarGraudoVertice(GrafoP* g, int v){
 
 //Tabela de complexidade nos slides, variação é bem interessante
 //Prox aula são funções mais compelxas
+
+
