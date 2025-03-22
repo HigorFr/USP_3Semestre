@@ -4,8 +4,11 @@
 
 
 //Voltando ao tópico de encapsulamento, o id e o nome continuam sendo possíveis de serem alterados através de pessoa.id ou pessoa.nome
+
 //Para evitar isso, podemos usar o private, que faz com que só a própria classe possa acessar esses atributos e deixar apenas métodos públicos para acessar esses atributos
+
 //O default (Não colocar nada) é outro nível de segurança, que faz com que apenas classes do mesmo pacote possam acessar o atributo (Isso vai ser dito depois)
+
 //O protected é um nível de segurança que permite que classes filhas possam acessar o atributo, mas não outras classes
 
 //Isso é parte essencial da orientação a objetos
