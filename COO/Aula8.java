@@ -91,7 +91,7 @@ public class Aula8 {
         //Nem sempre vale a pena usar Hereança, alguns pontos a declarar 
             //De fato terá coisa reaproveitada?
             //Se de fato vale a pena craiar uma hierarquia de classes, para usar do polimorfismo
-            //E Outros pontos
+            //E Outros pontos, sempre dá para fugir de herança de algum modo. (inclusive há quem critique muito)
         
 
 }
