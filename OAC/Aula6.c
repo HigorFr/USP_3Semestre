@@ -97,5 +97,7 @@
 
     //Isso não vai resolver absolutamente o problema, mas a chance de vir ruido enquanto a porta sobe é minusculo, então melhora muito a chance de erros
 
+    //Varios FLipflops guardam informação, e podem ser encadeados (Criando memória)
+    //Tudo isso também resume porquê não usamos flip-flop em nível
 
-
+//Baixar proteus
