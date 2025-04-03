@@ -80,7 +80,7 @@
     //1 pra 0, K é 1
     //1 pra 1, K é 0
 
-//EP será de contador
+//EP será de contador LOGISIM
 
 //Máquina de transição em escala
 
