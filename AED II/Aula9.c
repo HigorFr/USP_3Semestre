@@ -58,3 +58,5 @@
         //No slide, não anotei o resto
 
     //prox aula algoritimo de kruskal (Mais fácil no gerla, mas tem um tem uma exceção específica que é mais complexa)
+
+    //EP1
