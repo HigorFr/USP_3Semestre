@@ -27,17 +27,15 @@ public class Aula11 {
         //Sempre que tem uma sequência muito grande de IFs ou Switchs, é um sinal de que o código não está bom
     
     //O jeito mais correto é colocar um objeto interface que irá me trazer todas as informações para a função como único parametro
-        //Classe Interface "Critério", que terá ter uma classe para cada parametro (tipo de função)
-            //Nesse caso vai ser à formula de area
-        //A função não vai saber o que está dentro do critério
+        //Classe Interface "Critério", que será usada para implementar outras classes para cada parametro
+            //Nesse caso vou ter um Class AreaCircuco Implements Criterio, Class AreaQuadrado Implements Criterio etc...
+            //Todas elas terão métodos próprios para implementa um resultado proprio (Que nesse cario é um inteiro representando a área)    
+        //Esse objeto "critério" da classe critério será o parametro da função, e já retornará o valor da área
+        //Isso ajuda a generalizar
 
-    //Modificador implements 
+    //Modificador "Implements"
         //A classe que implementa a interface é obrigada a implementar todos os métodos da interface
-        //A interface não pode ser instanciada, apenas as classes que implementam a interface podem ser instanciadas
-        //A interface pode ter métodos abstratos e métodos concretos (com implementação)
-        //A classe que implementa a interface pode ter métodos concretos e métodos abstratos (sem implementação)
-        //A classe que implementa a interface pode ter atributos e métodos concretos e abstratos (sem implementação)
-        //A classe que implementa a interface pode ter construtores, mas não pode ser instanciada diretamente
-
-
+        //Então fica Classe Utilizadora implements Interface
+    
+    
 }
