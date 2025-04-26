@@ -247,13 +247,6 @@ void exibeArranjoInteiros(int* arranjo, int n){
 
 
 
-
-
-
-
-
-
-
 //Funções auxiliares:
 
 void zerarArranjoDeGrafo(int qtd, int* valores) {
@@ -362,20 +355,6 @@ void buscaEmLargura(Grafo* g, int v, int* distancia){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Funcao que calcula a homofilia entre o vertice v e os demais */
 void homofilia(Grafo* g, int v, int* valores) {
   
@@ -395,9 +374,6 @@ void homofilia(Grafo* g, int v, int* valores) {
     valores[j] = valor;
   }
 }
-
-
-
 
 
 
@@ -429,13 +405,6 @@ void raridade(Grafo* g, int v, double* valores) {
     valores[j] = valor;
   }
 }
-
-
-
-
-
-
-
 
 
 
