@@ -47,9 +47,10 @@ public class Aula15 {
             //seja do módulo filho ou do pai
             //Mais isso pode dar problema, pois se tiver dependicas ente os dois, o compilador não vai saber onde procurar
                 //O certo é usar o nome inteiro da classe, com pacote e tudo
-                //E estar na raiz do proejto
+                //E estar na raiz do proejto (OU ele não vai achar o arquivo)
 
-        
+        //Também tem o IMPORT, que é para importar pacotes inteiros ou classes específicas
+            //Dessa forma eu não preciso usar o nome inteiro, ele já pega o noem da classe          
 
 
     
