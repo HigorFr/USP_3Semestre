@@ -47,8 +47,10 @@ public class Aula15 {
             //seja do módulo filho ou do pai
             //Mais isso pode dar problema, pois se tiver dependicas ente os dois, o compilador não vai saber onde procurar
                 //O certo é usar o nome inteiro da classe, com pacote e tudo
-                //Ou estar na raiz do proejto
+                //E estar na raiz do proejto
+
+        
 
 
-
+    
 }
