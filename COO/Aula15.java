@@ -31,17 +31,23 @@ public class Aula15 {
             //dir1.subA (PAcote da subA)
             //dir1.subB (Pacote da subB)
 
+        
             //Isso por mais que pareça redundante, me ajuda a indicar onde começa o arquivo
+
+        //OBS: .Jar é uma estrutura dessa compactada (Praticamente um .zip)
+
 
         //Para compilar com os pacotes é só compilar normal o main, diferente do GCC que só passa uma vez e tudo precisa ser especificado
             //Automaticamente o compilador assume que a classe existe em algum arquivo, e procura então no mesmo diretório
 
-        //Invoca o pacote com "package nome_do_pacote;"
+        //Invoca o pacote com "package nome_do_pacote;" quando eles não são vizinhos
             
 
-        //.Jar é uma estrutura dessa compactada (Praticamente um .zip)
-
-
+        //Dá para compilar de qualquer caminho
+            //seja do módulo filho ou do pai
+            //Mais isso pode dar problema, pois se tiver dependicas ente os dois, o compilador não vai saber onde procurar
+                //O certo é usar o nome inteiro da classe, com pacote e tudo
+                //Ou estar na raiz do proejto
 
 
 
