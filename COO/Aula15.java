@@ -40,7 +40,7 @@ public class Aula15 {
         //Para compilar com os pacotes é só compilar normal o main, diferente do GCC que só passa uma vez e tudo precisa ser especificado
             //Automaticamente o compilador assume que a classe existe em algum arquivo, e procura então no mesmo diretório
 
-        //Invoca o pacote com "package nome_do_pacote;" quando eles não são vizinhos
+        //Nome do pacote com "package nome_do_pacote;"
             
 
         //Dá para compilar de qualquer caminho
@@ -52,6 +52,6 @@ public class Aula15 {
         //Também tem o IMPORT, que é para importar pacotes inteiros ou classes específicas
             //Dessa forma eu não preciso usar o nome inteiro, ele já pega o noem da classe          
 
-
+        //Package é para dar o nome do pacote (??? Talvez não, copilot que disse)
     
 }
