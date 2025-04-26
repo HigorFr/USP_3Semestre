@@ -51,10 +51,10 @@
     //Grafo bipartido é aquele que todas a areastas saem de um subconjunto e vão para outro (Nunca as areastas se conectam entre sí)
         //Se eu tiver um grafo com produtos e pessoas descrevendo um ambiente de compra, teremos grafos bipartido (Já que pessoas não compram pessoas e produtos não compram produtos)
 
-    //Multigrafo são mútiplas arestas em uma mesmo par de vértices (Ex analisar simuntaneamente daus redes sociais diferentes)
+    //Multigrafo são mútiplas arestas em uma mesmo par de vértices (Ex analisar simuntaneamente duas redes sociais diferentes)
         //Normalemnte só concanectam as arestas na prática, adicionando ambas as informações e voltando a ser apenas uma aresta
 
-    // Misto é aquela que possui grafos direcionais e não direcionais
+    // Misto é aquele que possui grafos direcionais e não direcionais
         //Dificilmente usada, nem tem representação padrão      
 
 

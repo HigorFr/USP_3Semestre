@@ -40,7 +40,7 @@
                     }
                 }
         }
-    }
+    } //Acho que isso está errado, foi o copilot que fez
 
 //Complexidade, no extremo, é O(V^2). Mas confirmar isso é complexo.
 
