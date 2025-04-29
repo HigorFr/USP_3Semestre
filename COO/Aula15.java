@@ -51,6 +51,10 @@ public class Aula15 {
 
         //Também tem o IMPORT, que é para importar pacotes inteiros ou classes específicas
             //Dessa forma eu não preciso usar o nome inteiro, ele já pega o noem da classe          
+            //Posso usar * para importar tudo, mas isso não é recomendado
+                //Pois pode dar conflito de nomes, e o compilador não vai saber qual usar
+                //Então é melhor importar só o que eu preciso, ou o pacote inteiro (Mas isso é raro)
+                //E mesmo assim, se tiver conflito, o compilador não vai saber qual usar e vai dar erro
 
         //Package é para dar o nome do pacote (??? Talvez não, copilot que disse)
     
