@@ -18,29 +18,22 @@
     //Essa busca irá gerar uma árvore de busca também, que irá significar o menor caminho do V0 até qualquer outro desejado. (Pode haver mais de um caminho mais curto, ele falará só um deles).
 
     //Supondo umna fila já estruturada (E lista de adjacências)
-    void buscaEmLargura(Grafo* G, int inicial, bool* visitado){
-        if(!g||inicial<0||inicial>=G->numVertices) return;
+    void buscaEmLargura(Grafo* g, int inicial, bool* visitado){
+        if (!g || inicial < 0 || inicial >= g->numVertices) return;
         int x, atual;
-        Fila f; No* no;
-        inicializaFila(&f);
-        insereFila(&f, inicial); //Coloca o nó inicial na fila
-        visitado[inicial] = true; //Marca o nó inicial como visitado
-        while(!filaVazia(&f)){ //Enquanto a fila não estiver vazia
-            atual = removeFila(&f); //Remove o nó da fila e armazena na variável atual
-            printf("%d ", atual); //Imprime o nó atual
-            no = G->adjacencias[atual]; //Pega a lista de adjacências do nó atual
-            while(no != NULL){ //Enquanto houver nós adjacentes
-                no = excluiFila(&f); //Pega o vértice do nó adjacente
-                atual = no->valor;
-                free(no);
-                for(x=0;x<G->numVertices;x++ && g->matrizAdj[atual][x]){ //Para cada nó adjacente
-                    if(!visitado[x]){ //Se o nó não foi visitado
-                        visitado[x] = true; //Marca como visitado
-                        insereFila(&f, x); //Insere na fila
-                    }
+        Fila f ;
+        inicializaFila(&f) ;
+        insereFila(&f,inicial);
+        visitado[inicial] = true;
+        while(!filaVazia(&f) ){
+            atual =excluiFila(&f) ;
+            for (x=0;x<g->numVertices;x++)
+                if (!visitado[x] && g->matriz[atual][x]!=false){
+                    insereFila(&f, x) ;
+                    visitado[x] = true;
                 }
         }
-    } //Acho que isso está errado, foi o copilot que fez
+    }
 
 //Complexidade, no extremo, é O(V^2). Mas confirmar isso é complexo.
 
