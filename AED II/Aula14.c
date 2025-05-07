@@ -95,7 +95,7 @@ void leGrafo(char *nomeArquivo, Grafo *grafo) {
     //Eu junto os bytes (8 bites) e coloco em um inteiro 
     //Sempre quando compresso eu tenho ganhos e perdas, nesse caso eu vou economizar memória secundaria mas vou perder entendimento do arquivo como pessoa(O que nem sempre é um problema)
 
-    //Descompactar é também uma perca de processamento por exemplo
+    //Descompactar é também uma perca de processamento por exemplo, e normalmente é mais díficil que implementar do que a compactação.
 
     //Compactações são muito complexas, exigem calculos matemáticos que pessaos tiveram que pensar muito nisso. Basicmaente é dimuir redundância.
 
@@ -118,3 +118,9 @@ void leGrafo(char *nomeArquivo, Grafo *grafo) {
     //Independente se o valor é 1, ou 2, ele vai salvr 64 bits (em uma arquitetura de 64 bits por exemplo) 
     //AVISO, se a estrutura tiver um ponteiro, ele não vai salvar o que está no ponteiro, ele vai salvar o endereço do ponteiro (que é o que ele tem acesso), então não é uma boa prática usar ponteiros em estruturas que serão salvas em arquivos binários. 
     //Não faz sentido salvar o endereço de um ponteiro, já que o endereço pode mudar de execução para execução, então não faz sentido salvar o endereço de um ponteiro em um arquivo binário.
+
+
+//Em tamanho váricvel não temos essa vantagem do Fwrite, então temos que fazer laço para salvar cada atributo, e o mesmo para ler (fread) (Não sei o que é fread, copilot que colocou)
+    //O fread é a mesma coisa que o fwrite, só que para ler. Ele lê o número de bytes correspondente ao tamanho do tipo de dado e armazena no endereço de memória especificado. (De acordo com o copilot)
+
+
