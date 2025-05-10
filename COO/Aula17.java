@@ -28,7 +28,7 @@ public class Aula17 {
                 //Nesse caso "Exception" é um tipo de erro genérito, ou seja, ele ta pegando vários tipos de erros que dá e rodando esse código, contudo tem outros erros mais específicos que podem ser tratados, tipo IOException, etc..
                     //Se a exceção lançada não bater com esse catch ele simplesmente não executa.
 
-                  
+                //Se não tivese catch funcionaria também, ele só ignoraria                  
                 return 0
 
             }
@@ -64,7 +64,7 @@ public class Aula17 {
             //sempre é uma escolha do programado colocar ou não throws, as vezes não vale a pena
 
 
-            
+            //
 
 
 }  
