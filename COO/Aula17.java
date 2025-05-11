@@ -57,7 +57,7 @@ public class Aula17 {
 
             //Exception também é dívida em várias partes, entre elas tem as runtime exceptions, que são erros de execução, ou seja, erros que só aparecem quando o programa está rodando (Exemplo: NullPointerException, ArrayIndexOutOfBoundsException, etc..) e as outras.
                 //As runtime são chamadas de unchecked exceptions, ou seja, não precisam ser tratadas, mas é bom tratar elas para evitar problemas futuros.
-                //As outras (inclusive os erros eu acho) são chamadas de checked exceptions, ou seja, precisam ser tratadas, caso contrário o código não compila. (Exemplo: IOException, SQLException, etc..)
+                //As outras (inclusive os erros) são chamadas de checked exceptions, ou seja, precisam ser tratadas, caso contrário o código não compila. (Exemplo: IOException, SQLException, etc..)
 
             //Todas as runtime exceptions são culpas do programador, ou seja, são erros de lógica, enquanto as outras podem ser erros de execução que não são culpa do programador (Exemplo: Arquivo não encontrado, etc..).
 
