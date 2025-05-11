@@ -18,7 +18,7 @@ bool busca(Grafo * g, int atual, bool * visitado, int anterior){
         if(g->matriz[atual][x] && !visitado[x]) //Em ponderados vai ser != Aresta_invalida obviamente
             busca(g,x,visitado,atual);
 }
-//Complexidade não é trivial, é necessário analisar o código em sí
+//Complexidade não é trivial, é necessário analisar o código em sí 
 //Nesse caso é (v-1)*T(v-1), o parametro é v-1 pois em cada caso eu confiro um grafo
     //Cada vez o numero de vizinhos vai diminuindo também, divimuindo o mutiplicador do T()
     //Isso vira O(V²)
