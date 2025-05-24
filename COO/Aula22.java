@@ -26,6 +26,35 @@ public class Aula22 {
             //Para funcionar eu deveria usar o <T> para manter ele sincronizado com o esperado do méotodo
 
 
-            
+            //Até aqui é a P1 (Dia 30/5)
 
-}
+
+//Outro conteúdo aqui pro futuro (E pro EP)
+    //Coleções Java
+
+    //Java collections framework
+
+            //Implementa estruturas clássicas de dados
+                //Listas
+                //Filas
+                //Pilha
+                //Conjuntos
+                //Mapas
+
+            //Para usar é só importar a biblioteca java.util
+                //Todas já são as mais eficientes possíveis
+                //Dá para trocar estuturas por outras sem grandes mudanças de arquitetura
+
+            //Existe uma classe abstrata chamada Collection, que é a superclasse de todas as coleções
+                //Ela tem métodos comuns a todas as coleções, como add, remove, clear, size, etc
+                //E ela tem subtipos que são as implementações das estruturas de dados
+                    //List: ArrayList, LinkedList, Vector
+                    //Set: HashSet, LinkedHashSet, TreeSet
+                    //Map: HashMap, LinkedHashMap, TreeMap            
+
+            //Ele meio que define todas as operações elementares, ela é o básico de operações
+                //Dentro dela tem ainda a List que é uma interface que extende a Collection com métodos específicos para listas
+                //Conforme vai descendo a hierarquia, vou ficnado com operações mais específicas
+
+
+        }
