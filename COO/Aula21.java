@@ -55,6 +55,6 @@ public class Aula21 {
                     }
                 }
 
-                //Ou seja, é um T que extende o Comparable dele mesmo, ou seja, obrigatoriamente tem que ser um tipo que seja comparável consigo mesmo, coisa que não vai acontecer entre int e float como ali, e nesse caso vai passar a dar erro
+                //Ou seja, é um T que extende o Comparable dele mesmo, ou seja, obrigatoriamente tem que ser um tipo que seja comparável consigo mesmo, coisa que não vai acontecer entre int e float como ali, e nesse caso vai passar a dar erro  
                    // Se eu tirar o <T> do Comparable<T>, vai ficar só Comparable como exigência, então ele vai exigir apenas que ele seja comparável com algo (Ou seja, que implementou comparable alguma vez). Desse modo ele voltaria a funcionar
 }
