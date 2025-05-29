@@ -72,4 +72,11 @@ public class Aula20 {
             }
 
     //Outra coisa é que ume variável genérica não pode ser chamada em contexto staticos, pois em métoods staticos são universas, e variáveis genéricas não estão definidas ainda (eu acho )
+
+    //O caractere coringa é para quando eu não vou usar de fato a variável T genérica, (tipo recebo uma lista generica, mas não preciso saber o tipo dela, só preciso que ela seja aceita pelo método)      
+    public void metodoComCoringa(List<?> lista) {
+        for (Object elemento : lista) {
+            System.out.println(elemento); //Note que não usei o T, pois não preciso
+        }
+    }
 }
