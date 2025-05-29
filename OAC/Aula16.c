@@ -28,4 +28,5 @@
 
 //Correção de erros
     //Redundancia para conferir erros perdidos
-    //Exemplo 3 circulos, armazeno o que torna eles parkss
+    //Exemplo 3 circulos, armazeno o que torna eles pares
+    //Comparo e arrumo em caso de erro (corromper)
