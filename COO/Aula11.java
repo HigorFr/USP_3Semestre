@@ -47,7 +47,7 @@ public class Aula11 {
                 //Open CLosed (Abertas para extensão e fechadas para modificação)
                 //Capaz de adicionar novas funcionalidades sem modificar o código existente
     //Constantes no Java
-    //São atributos que não podem ser alterados, estáticos, diferente no C que s    ão pré processados e substituidos
+    //São atributos que não podem ser alterados, estáticos, diferente no C que são pré processados e substituidos
 
 
     //Contudo fazer essa parametrização (Através de um IF, ou Switch) fica meio merda
