@@ -22,6 +22,7 @@ public class Aula20 {
         }
 
         public T pop() {
+            new int list = list[5];
             if (topo == -1) {
                 System.out.println("Pilha vazia");
                 return null;

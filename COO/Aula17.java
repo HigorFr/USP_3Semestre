@@ -13,15 +13,15 @@ public class Aula17 {
         //Throw é para lançar uma exeção manualmente que você fez, e ainda você pode configurar o catch para capturar ela (Note que nada abaix do throw vai ser executado, pois ele interrompe o código ali mesmo)
 
         //Exemplo aqui, ele não vai retornar o X se for fora de 0 a 10:
-        public static double ledouble() throws Exception {
+        public static double ledouble(int x) throws Exception {
             //Preciso do throws Exception, pois eu indico que talvez essa função mande exceção
             
             if(x < 0 || x > 10) throw new Exception("Valor inválido" + x);
             return x;
-
+            
 
         //aqui eu trato o do ledouble, se eu não tratar da maneira certa ele não vai compilar (Mesmo se não sequer ele foi chamado)
-            catch(Exception e) {
+            catch(Exceptio e) {
                 System.out.println("Erro: " + e.getMessage());
                 e.printStackTrace(); //Esse método imprime o Callstack onde está o erro, isso facilita muito na hora de identificar o problema
 
@@ -29,7 +29,7 @@ public class Aula17 {
                     //Se a exceção lançada não bater com esse catch ele simplesmente não executa.
 
                 //Se não tivese catch funcionaria também, ele só ignoraria                  
-                return 0
+                return 0;
 
             }
         }

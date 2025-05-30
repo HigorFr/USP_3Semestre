@@ -1,5 +1,33 @@
-
 public class Aula11 {
+    private static interface Geometrico {
+        double calcularArea();
+    }   
+
+
+    private static class Circulo implements Geometrico {
+        int r;
+        Circulo(int a){ 
+            r = a;
+        }
+
+        
+        public double calcularArea() {
+            return Math.pow(r, 2) * 3.14;
+        }
+
+    }
+
+
+    public static void main(String[] args){
+        
+        
+        
+        Circulo a = new Circulo(2); 
+        double c = a.calcularArea();
+        System.out.println(c);
+        
+
+    }
 
     //Voltando um pouco para interface
     //É um "Contrato" que a classe tem que seguir
@@ -39,3 +67,4 @@ public class Aula11 {
     
     
 }
+
