@@ -15,7 +15,7 @@ public class Aula22 {
 
     //Exceção, qunado eu defino tipo específico do parametro, vai funcionar diferente como a generalização do méotodo:
         //No méotodo:
-        public <T extendes Number> void metodoGenerico(Lista<Number> objeto){
+        public <T extends Double> void metodoGenerico(Lista<Number> objeto){
             }
 
         //Por mais que o méotdo aceita o tipo Inteiro ou double, pois ele aceita qualquer coisa que extend Number, a Lista não vai aceitar, pois ela é um parametro.
