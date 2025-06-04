@@ -91,8 +91,8 @@
     //C1 = D1 xor D2 xor D4 xor D5 xor D7
     //C2 = Slide.
 
-    //Ele avisa qual é usando esse método, você diferencia usando a distância de hamming, que é a difenreça da bit de hamming e o dado lido (Cosniderando só os bits de paridade C)
-        //Se um bit de paridade estiver corrompido ele também avisa, pois o bit de validade faz parte dele
+    //Ele avisa qual é usando esse método, você diferencia usando a distância de hamming, que é a difenreça da bit de hamming e o dado lido (Cosniderando só os bits de conferencia C)
+        //Se um bit de conferencia estiver corrompido ele também avisa, pois o bit de validade faz parte dele
 
-    //Formula do tamanho total 2^k -1 >= M + K (Pois ele vai guardar a paridade também)
+    //Formula do tamanho total 2^k -1 >= M + K (Pois ele vai guardar a conferencia também)
 
