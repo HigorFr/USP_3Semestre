@@ -49,7 +49,7 @@
 
 //EP
     //TXT com vários, converter um arquivo de C para assembly
-        //MARS para simulação
+        //MARS (64 BITS) para simulação
         //Quatro funções básicas
         //Literalmente ler caractere
         
