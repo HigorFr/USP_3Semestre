@@ -41,4 +41,92 @@ class Pessoa {
 
 
 
-public class Aula5 {}
+
+
+public class Aula5 {
+
+    public static class Filagenerica<T>{
+
+        private int max;
+        private T[] array;
+        private int qtd = 0;
+
+        private Filagenerica(int max){
+            this.max = max;
+            this.array = (T[]) new Object[max];
+        }
+
+
+        public void adicionar(T Elemento){
+            if(qtd == max){
+                System.out.println("lista cheia");
+                return;
+            }
+            this.array[qtd] = Elemento;
+            this.qtd++;
+        }
+    
+
+
+        public T remover(){
+            if(qtd == 0){
+                System.out.println("lista vazia");
+                return null;
+            }
+            
+            T temp = array[0];
+            int x;
+            for(x=1;x<qtd;x++){
+                array[x-1] = array[x];
+            }
+            qtd--;
+            return temp;
+        }
+
+        public int getTamanho(){
+            return this.qtd;
+
+            
+        }
+
+
+    }
+
+    public static class Teste{
+
+        public static <T> Filagenerica<T> criaFila(T[] lista){
+            Filagenerica<T> fila = new Filagenerica<>(lista.length);
+            for(T elemento : lista){
+                fila.adicionar(elemento);
+            }
+            return fila;
+        }
+
+
+        public static <T> void processafila(Filagenerica<T> fila){
+            int x;
+            int q = fila.getTamanho();
+            for(x=0;x<q;x++){
+                System.out.println(fila.remover());
+            }
+        }
+
+    }
+
+
+    public static void  main(String[] args){
+        String[] lista1 = {"Teste1", "Teste2", "Teste3" };
+        Integer[] lista2 = {1,2,3,4,5,6,7,8};
+        Double[] lista3 = {1.0, 2.0, 3.0, 4.0, 5.0, 6.9};
+        Object[] lista4 = {"a","b","c","d"};
+
+        Teste.processafila(Teste.criaFila(lista1));
+        Teste.processafila(Teste.criaFila(lista2));
+        Teste.processafila(Teste.criaFila(lista3));
+        Teste.processafila(Teste.criaFila(lista4));
+
+    }
+
+
+
+}
