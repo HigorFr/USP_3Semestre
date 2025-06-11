@@ -83,4 +83,22 @@
 
 
 //Um pouco da aula de assembly  
-    
+    //Considerando processador MIPS, arquiterua (RISC ou RISK, sei la)
+
+//Ex
+add a,b,c
+
+// A é destino, b e c são fontess
+
+//Para somar A+B+C tem que fazer uma decomposição de várias coisas simples:
+add a,b,c
+add a,a,d
+add a,a,e
+
+//Isso pelo principio de regularidade, o processador vai sempre prefirir algo mais simples para evitar que o processador trabalhe mais
+
+//$ra guarda endeço a árvore Pai da callstack, em função recursiva eu preciso de $fp e $sempre
+
+//Tabela depois explicando todas as funções
+    //Tem uma classificação pra cada comando
+    //O que é imediato??
