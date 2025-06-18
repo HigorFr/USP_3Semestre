@@ -14,7 +14,15 @@ public class Aula25 {
             //O proprio printi do System.out.println() é um fluxo de dados, que escreve na saída padrão do sistema, que é o terminal.
             //Vamos estudar a arvore  de classes que definem essas funções padrões do java
 
-            
+        //Read() - Ler dados de um fluxo de entrada
+        //Write() - Escrever dados em um fluxo de saída
+        //Elas são implementadas por meio de classes que representam os fluxos de dados, como InputStream e OutputStream para fluxos binários, e Reader e Writer para fluxos de caracteres.
+            //Elas são classes abstratas, ou seja, regem o compartamento mais básico de entradas e saídas
+
+
+        //
+        
+
 
 
 
