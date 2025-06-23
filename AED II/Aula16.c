@@ -48,6 +48,10 @@
     //O(b)
 
 
+
+
+    
+
 //Arquivo ordenado
     //Arquivo é ordenado por Chave, um valor do arquivo que é ordenável
     //OU seja, com um unico seek eu consigo achar tudo que eu quero no bloc O(1)
