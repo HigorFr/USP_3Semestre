@@ -3,7 +3,6 @@
 //Lembrando 
     //Minimo é para garantir o balancemaneto e Máximo é eficiencia da busca sequencial
     //T-1 elementos é o mínimo, e 2T-1 é o máximo
-    //Sendo T o número de filhos que o nó pode ter
     //Ordem T é grau minimo (ele por sí só não representa nada, é só uma constante que define os coisas)
 
     //Vou passando dividindo o que está cheio antes de inserir.
