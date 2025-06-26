@@ -74,3 +74,11 @@
         #Nivel 5 - Cada disco tem parte da paridade de todos do mesmo andar, fica distribuido (Ou seja, não tem disco especifico para paridades)
         #Nivel 6 - Dois calculos de paridade todos espalahdos já nos distos de dados (que nem no 5)
 
+#Correção de erro cai na prova 5 a 6 questões de cada 
+1 de disco
+1 de pipeline
+1 de cache
+1 de MEMORIA
+1 de código (de c pra asm ou inverso)
+
+EP dia 06 23:59
