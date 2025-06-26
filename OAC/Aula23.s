@@ -53,5 +53,24 @@
 
 
 
+#MEMORIA SECUNDARIA CAI NA prova
+    #O QUE CAI:
+    #Como funciona prato do disco, gravação usando polaridade e geração elétrica
 
+    #Trilhas, setores
+    #Tem blocos, em gap que informam toddas as informações sobre localização pro disco, (ele fala setor, bloco etc...)
+    #Todo setor tem um campo para esses dados
+
+    #TEM O RAID 
+        #Tem varios discos para gravar os dados
+        #Níveis, tudo distribuido para os dicso de Agrupamento
+        #Dados distribuidos ao longo do disco para ter redundancia
+
+        #Nivel 0 - Só separou os dados em vários discos
+        #Nivel 1 - Duplicou, redudancia completa
+        #Nivel 2 - Bits de paridade ficam em outros discos (Mesma quantidade de disco duplicada), dai não dá problema no mesmo lugar
+        #Nivel 3 - Coloca apenas um disco de redundância invés de um pra cada
+        #Nivel 4 - Vários discos dispersos + um disco apenas no mesmo andar para paridade 
+        #Nivel 5 - Cada disco tem parte da paridade de todos do mesmo andar, fica distribuido (Ou seja, não tem disco especifico para paridades)
+        #Nivel 6 - Dois calculos de paridade todos espalahdos já nos distos de dados (que nem no 5)
 
