@@ -1,0 +1,57 @@
+#Processo de Pipepline
+
+#Paralelismo entre processo, dá para fazer mútiplas coisas ao mesmo tempo
+    #Certas estururas do código ficam inativas enquanto está tudo acontecendo no diagrama, então o foco é fazer com que elas sejam aproveitadas
+
+#Ele não ajuda na latência em sí de nada, ele só melhora o "throughput", a vazão
+    #Ou seja, se eu analisar um aepnas processo isolado é o mesmo tempo do que seria
+    #aceleração máxima é o numero de estágios, além disso não vai fazer mais sentido
+
+#O potencial máximo só vai se mostrar de fato quando o pipeline estiver cheio
+
+
+#Branches executados vão fazer o que já foi executado num "pre-fire" ser jogado no lixo
+    #Isso perde desempenho
+
+#outra coisa que pode acontecer que veremos no futuro (OAC II) é dependencia, as vezes um comando depende do outro e preciso ficar loopando para esperar ela terminar
+
+
+
+#Calculo sempre utilizando o pipeline cheio:
+    #   Tempo do monocilo / Numero de estágios
+
+#MIPS para pipeline (ele é feito para isso)
+    #32Bits para facilitar busca e ajuda o pipeline
+
+#estágios
+    #Busca BI
+    #Leitura, Decodificação ID
+    #Execução, usa a ULA EX
+    #Acesso na memŕoia, lê ou escreve M (Ou DM)
+    #Escreve de volta WB (ou ER)
+
+
+#só se sabe se é branch ou jump na execução (terceiro ciclo)
+
+
+#alguma coisas que assumimos que vamos refutar em OAC II
+    #todo calculo é o mesmo ciclo (Na verdade mutiplicação demora mais, divisão também)
+    #Ignora dependencia de instruição
+    #Entre outras
+
+
+#No diagrama, há de mencionar que entre cada estágio tem buffers, que são flipflops que carregam valores para o proximo estágio de maenira sincronizada com o clock
+
+
+#Certas informações, como controle são carregadas por esse buffers durante a execuação
+    #Tipo saber ond eescrever de volta no write back (O que está lá ja salvo estaria errado, pois ta tudo acotnencendo ao mesmo tempo)
+    #No final o doagrama fica diferente então, os sinais de controle vão sendo empurrados com o clock
+
+
+#Proejto ULA
+    #00 Força soma, 01 Foçar subtração, 10 Olha function
+
+
+
+
+
